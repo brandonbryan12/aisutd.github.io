@@ -1,7 +1,9 @@
-$(document).ready(function(){
-  $('.featured-images').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
-  });
+
+// Set up the carousel
+jQuery(document).ready(function($) {
+    $('#featured-images').owlCarousel({
+      autoPlay : true,
+      pagination : false,
+      items : 3
+    });
 });
